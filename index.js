@@ -8,7 +8,7 @@ const client = require('twilio')(accountSid,authToken);
 
 
 // route pages
-app.get('/msg', function(req, res) {
+app.get('/', function(req, res) {
 	console.log("sending whatsapp message");
 
 	client.messages.create({
